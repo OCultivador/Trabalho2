@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        input.blue-border,
+        textarea.blue-border {
+            border: 2px solid #1a84e7;
+            width: 60%;
+            box-sizing: border-box;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            border: 2px solid #1a84e7;
+            padding: 25px;
+            margin-bottom: 20px;
+            background: white;
+        }
+
+        label {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            color: #1a84e7;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> 
+            <img src="/img/logo.PNG" alt="" style="width: 100px;">        
+        </a>
+    </header>
+    <h2>Cadastro</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <form method="POST" action="#">
+            <fieldset style="width:500px;">
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <div>
+                        <label for="Login">Login*</label>
+                        <input type="text" id="Login" name="Login" placeholder="Digite seu email" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="Senha">Senha*</label>
+                        <input type="password" id="Senha" name="Senha" placeholder="Digite sua Senha" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="name">Nome*</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="CPF">CPF*</label>
+                        <input type="text" id="CPF" name="CPF" placeholder="Digite seu CPF" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@email.com" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone*</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="dtnasc">Data Nascimento</label>
+                        <input type="date" id="dtnasc" name="dtnasc" class="blue-border">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset style="width:500px;">
+                <legend>Endereço</legend>
+                <div>
+                    <div>
+                        <label for="cep">CEP*</label>
+                        <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="tipologradouro">Tipo de Logradouro*</label>
+                        <select id="tipologradouro" name="tipologradouro" class="blue-border" required="">
+                            <option value="" disabled="" selected="" hidden="">Selecione</option>
+                            <option value="R">Rua</option>
+                            <option value="Av">Avenida</option>
+                            <option value="Pç">Praça</option>
+                            <option value="Rd">Rodovia</option>
+                            <option value="V">Via</option>
+                            <option value="Vl">Vila</option>
+                            <option value="Vla">Viela</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="logradouro">Logradouro*</label>
+                        <input type="text" id="logradouro" name="logradouro" placeholder="Insira seu Logradouro" class="blue-border">
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade*</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Insira sua Cidade" class="blue-border" required="">
+                    </div>
+                    <div>
+                        <label for="estado">Estado*</label>
+                        <input type="text" id="estado" name="estado" placeholder="Insira seu Estado" class="blue-border" required="">
+                    </div>
+                    <br>
+                    <button type="button">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <div class="barrarodapé">
+            <div class="rodapé">@Petinhos 2023</div>
+        </div>
+    </footer>
+
+    <script src="Carrinho.js"></script>
+    <script src="Cadastro.js"></script>
+</body>
+
+</html>
+``

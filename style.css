@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lato&family=Oswald&family=Poppins:wght@300&family=Quicksand&display=swap');
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Reset de estilos padrÃ£o do navegador */
+body,
+h1,
+ul,
+li {
+    margin: 10;
+    padding: 5;
+}
+
+/* Estilos do cabeÃ§alho */
+header {
+    background-color: #a7d0ec;
+    text-align: right;
+    padding: 2%;
+    margin-bottom: 0%;
+}
+
+header img {
+    float: left;
+    padding-left: 15%;
+    padding: right -20%;
+}
+
+/* Estilos da navegaçã£o */
+nav {
+    background-color: black;
+    text-align: right;
+    padding: 0.01%;
+    margin-top: 0%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10;
+    font-weight: bolder;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20;
+}
+
+/* espaceamento entre os curriculos na barrinha*/
+.barrinha {
+    margin-right: 5%;
+}
+
+/* EstilizaÃ§Ã£o dos links */
+a:hover {
+    color: #1a84e7
+        /* Rosa ao passar o mouse */
+}
+
+body {
+    background-color: white;
+    /*cor do background do site, sem afetar o back ground do Titulo*/
+
+}
+
+/* Estilos da galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos das imagens */
+.gallery img {
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Reset de estilos padrÃ£o do navegador, pra nÃ£o ter mais incosistencias */
+body,
+h1,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeÃ§alho 2 */
+header {
+    color: white;
+    text-align: right;
+    padding: 15px;
+    padding-right: 10%;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bolder;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+/* Estilos da navegaÃ§Ã£o */
+nav {
+    background-color: #eff6fa;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+/* Estilos do conteÃºdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para a seÃ§Ã£o de integrantes */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #eef3f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.add-car{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+.add-car a{
+    text-decoration: none;
+    color: black;
+}
+.add-car a:hover{
+    color: #1a84e7
+}
+
+
+.banner {
+    text-align: center;
+}
+
+/* Estilos rodapé*/
+.barrarodapé {
+    margin-top: 2rem;
+    background-color: #a7d0ec;
+    padding: 10px;
+}
+
+.rodapé {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+/* ENDEREÇO DE COBRANÇA */
+.container-pag{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.endereco-form{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.endereco-form p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.3rem;
+}
+.endereco-form label{
+    font-size: 1.5rem;
+    padding: 3px;
+}
+.endereco-form input {
+    border-radius: 5px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    background-color: #e9e8e8;
+    border: none;
+}
+.endereco-form input:focus-visible{
+    outline: 2px solid #1a84e7;
+}
+
+/* MÉTODO DE PAGAMENTO */
+.metodo-form{
+    display: flex;
+    flex-direction: column;
+}
+.metodo-form p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.3rem;
+}
+.fa-credit-card{
+    color: rgb(157, 4, 188);
+    padding-right: 10px;
+}
+.fa-pix{
+    color: #04bcac;
+    padding-right: 10px;
+}
+.metodos{
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+/* PAGAMENTO */
+.p-pag{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.3rem;
+}
+.conteudo{
+    display: none;
+}
+.credito-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.credito-div img{
+    width: 22.1rem;
+    height: 9rem;
+}
+.credito-div label{
+    font-size: 1.5rem;
+    padding: 3px;
+}
+.credito-div input{
+    border-radius: 5px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    background-color: #e9e8e8;
+    border: none;
+}
+.credito-div input:focus-visible{
+    outline: 2px solid #1a84e7;
+}
+#pix-opc img {
+    width: 15rem;
+}

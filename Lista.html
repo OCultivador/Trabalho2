@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petinhos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+    
+        /* Reset de estilos padrÃ£o do navegador */
+        body,
+        h1,
+        ul,
+        li {
+            margin: 10;
+            padding: 5;
+        }
+    
+        /* Estilos do cabeÃ§alho */
+        header {
+            background-color: #a7d0ec;
+            text-align: right;
+            padding: 2%;
+            margin-bottom: 0%;
+        }
+    
+        header img {
+            float: left;
+            padding-left: 15%;
+            padding: right -20%;
+        }
+    
+        /* Estilos da navegaçã£o */
+        nav {
+            background-color: black;
+            text-align: right;
+            padding: 0.01%;
+            margin-top: 0%;
+        }
+    
+        nav ul {
+            list-style-type: none;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin-right: 10;
+            font-weight: bolder;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+    
+        main {
+            padding: 20;
+        }
+    
+        /* EstilizaÃ§Ã£o dos links */
+        a:hover {
+            color: #1a84e7
+                /* Rosa ao passar o mouse */
+        }
+    
+        body {
+            background-color: white;
+            /*cor do background do site, sem afetar o back ground do Titulo*/
+    
+        }
+    
+        /* Reset de estilos padrÃ£o do navegador, pra nÃ£o ter mais incosistencias */
+        body,
+        h1,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Estilos do cabeÃ§alho 2 */
+        header {
+            color: white;
+            text-align: right;
+            padding: 15px;
+            padding-right: 10%;
+        }
+    
+        header ul li {
+            display: inline;
+            margin-right: 10px;
+            text-align: right;
+            font-weight: bolder;
+        }
+    
+        header a {
+            text-decoration: none;
+            color: #ffffff;
+    
+        }
+    
+        /* Estilos da navegaÃ§Ã£o */
+        nav {
+            background-color: #eff6fa;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+            padding: 10px;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: #3b3b3b;
+        }
+    
+        /* Estilos do conteÃºdo principal */
+        main {
+            padding: 20px;
+        }
+    
+        /* Estilos para a seÃ§Ã£o de integrantes */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .banner {
+            text-align: center;
+        }
+    
+        /* Estilos rodapé*/
+        .barrarodapé {
+            background-color: #a7d0ec;
+            padding: 10px;
+        }
+    
+        .rodapé {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-weight: lighter;
+        }
+    
+        h3 {
+            text-align: left;
+        }
+    
+        .tabela, th, td{
+        border-collapse: collapse; /*define a separação entre as bordas*/
+        padding: 10px;
+        text-align: left;
+        
+    }
+    
+    .tabela1 {
+        padding-left: 15%;
+        
+    }
+    
+    th{
+        background-color: #a7d0ec;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"> 
+            <img src="/img/logo.PNG" alt="" style="width: 100px;">
+            </a>
+        <ul>
+            <li><input type="text" placeholder="O que você procura?"></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Caes.html">Cães</a></li>
+            <li><a href="Gatos.html">Gatos</a></li>
+            <li><a href="Peixes.html">Peixes</a></li>
+            <li><a href="Outros.html">Outros Pets</a></li>
+            <li><a href="Higiene.html">Higiene</a></li>
+            <li><a href="Jardim.html">Jardim</a></li>
+            <li><a href="Lista.html">Catálogo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="banner">
+            <img src="banner.png" alt="" style="width: 970px;">
+        </div>
+    </main>
+
+    <!-- MAIN (Center website) -->
+
+    <div class="main">
+        <h2>Lista de Produtos</h2>
+    </div>
+    <div class="tabela1">
+        <h3>Para cães</h3>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Unidade</th>
+            <th>Estoque</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Ração para Cães Sabor Frango e Carne 10,1 kg</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$110,00</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Ração Úmida Raças Pequenas Carne ao Molho 100 g</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$5,00</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Capa de Chuva para Cachorro Rosa Bichinho Chic N° 01</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$40,00</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>NexGard Antipulgas e Carrapatos de 4,1 a 10kg para Cães 1 tablete</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$40,00</td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td>Cama Retangular Carmel Fábrica Pet Rosa P</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$60,00</td>
+        </tr>
+    </table>
+    <h3>Para gatos</h3>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Unidade</th>
+            <th>Estoque</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>006</td>
+            <td>Areia Pipicat Classic para Gatos 4 kg</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$17,00</td>
+        </tr>
+        <tr>
+            <td>007</td>
+            <td>Petisco Whiskas Temptations Anti Bola de Pelo Gatos Adultos 40g</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$11,00</td>
+        </tr>
+        <tr>
+            <td>008</td>
+            <td>Toca para Gato Flicks Bege</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$190,00</td>
+        </tr>
+        <tr>
+            <td>009</td>
+            <td>Arranhador House Liso São Pet Marrom e Bege Único</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$700,00</td>
+        </tr>
+        <tr>
+            <td>010</td>
+            <td>Catnip Premium Erva do Gato Petmais 5g</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$20,00</td>
+        </tr>
+    </table>
+    <h3>Para peixes</h3>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Unidade</th>
+            <th>Estoque</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>011</td>
+            <td>Aquário Curvo Boyu</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$900,00</td>
+        </tr>
+        <tr>
+            <td>012</td>
+            <td>Enfeite Tronco Lester Único</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$50,00</td>
+        </tr>
+        <tr>
+            <td>013</td>
+            <td>Ração Poytara Discos Black Line</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$50,00</td>
+        </tr>
+        <tr>
+            <td>014</td>
+            <td>Alimento Alcon Basic</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$15,00</td>
+        </tr>
+        <tr>
+            <td>015</td>
+            <td>Enfeite Lester Placa não Bata no Vidro</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$25,00</td>
+        </tr>
+    </table>
+    <h3>Para outros pets</h3>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Unidade</th>
+            <th>Estoque</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>016</td>
+            <td>Brinquedo Ferplas Para Hamsters Ponte Colorido</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$20,00</td>
+        </tr>
+        <tr>
+            <td>017</td>
+            <td>Granulado Higiênico de Madeira Granopet para Répteis 2kg</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$20,00</td>
+        </tr>
+        <tr>
+            <td>018</td>
+            <td>Alimento Alcon Club Reptolife para Tartarugas</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$100,00</td>
+        </tr>
+        <tr>
+            <td>019</td>
+            <td>Acessório para Gaiola Ferplast Barraca para Ferret Azul e Preto</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$70,00</td>
+        </tr>
+        <tr>
+            <td>020</td>
+            <td>Alimento Supra Funny Bunny Delícias da Horta para Roedores</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$50,00</td>
+        </tr>
+    </table>
+    <h3>Para higiene</h3>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Unidade</th>
+            <th>Estoque</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>021</td>
+            <td>Kit Dogs Procão para Cães Shampoo, Colônia e Condicionador</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$40,00</td>
+        </tr>
+        <tr>
+            <td>022</td>
+            <td>Rasqueadeira Furminator Verde para Cães de Pequeno Porte e Pelo Curto</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$132,00</td>
+        </tr>
+        <tr>
+            <td>023</td>
+            <td>Gel Dental Mundo Animal Good Care Haliclean</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$52,00</td>
+        </tr>
+        <tr>
+            <td>024</td>
+            <td>Perfume Petbrilho Para Cães Polo Dog</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$25,00</td>
+        </tr>
+        <tr>
+            <td>025</td>
+            <td>Banho à Seco Sanol Dog para Cães 500ml</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$35,00</td>
+        </tr>
+    </table>
+    <h3>Para jardim</h3>
+    <table border="1"
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Unidade</th>
+            <th>Estoque</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>026</td>
+            <td>Fertilizante Orgânico Bosta em Lata Plantas e Hortaliças 500g</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$30,00</td>
+        </tr>
+        <tr>
+            <td>027</td>
+            <td>Terra Vegetal Biomix 10 kg</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$13,00</td>
+        </tr>
+        <tr>
+            <td>028</td>
+            <td>Muda de Samambaia Hilli Cuia</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$30,00</td>
+        </tr>
+        <tr>
+            <td>029</td>
+            <td>Orquídea Oncidium Variado</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$50,00</td>
+        </tr>
+        <tr>
+            <td>030</td>
+            <td>Cactos Mandacaru</td>
+            <td>Unidade</td>
+            <td>10</td>
+            <td>R$40,00</td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <!-- END MAIN -->
+    </div>
+
+    <footer>
+        <div class="barrarodapé">
+            <div class="rodapé">@Petinhos 2023</div>
+        </div>
+    </footer>
+</body>
+
+</html>

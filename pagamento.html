@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petinhos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> 
+            <img src="/img/logo.PNG" alt="" style="width: 100px;">        
+        </a>
+        <ul>
+            <li><input type="text" placeholder="O que você procura?"></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Caes.html">Cães</a></li>
+            <li><a href="Gatos.html">Gatos</a></li>
+            <li><a href="Peixes.html">Peixes</a></li>
+            <li><a href="Outros.html">Outros Pets</a></li>
+            <li><a href="Higiene.html">Higiene</a></li>
+            <li><a href="Jardim.html">Jardim</a></li>
+            <li><a href="Lista.html">Catálogo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="banner">
+            <img src="/img/banner.png" alt="" style="width: 970px;">
+        </div>
+    </main>
+    <!-- ENDEREÇO DE COBRANÇA -->
+    <div class="container-pag">
+        
+         <form class="endereco-form">
+            
+            <p>Endereço de cobrança</p>
+            <label>CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite o seu CEP" minlength="8" maxlength="8" required>
+
+            <label>Rua:</label>
+            <input type="text" id="address" placeholder="Digite a sua rua" name="address" required>
+
+            <label>Número:</label>
+            <input placeholder="Digite o seu número">
+
+            <label>Complemento (opicional):</label>
+            <input placeholder="Digite o complemento">
+
+            <label>Bairro:</label>
+            <input type="text" id="neighborhood" name="neighborhood" placeholder="Digite o seu bairro" required>
+
+            <label>Cidade:</label>
+            <input type="text" id="city" name="city" placeholder="Digite a sua cidade" required>
+
+            <label>Estado:</label>
+            <input type="text" id="region" name="region" placeholder="Digite o seu estado" required>
+         </form>
+    <!-- MÉTODO DE PAGAMENTO -->
+         <form class="metodo-form"> 
+            <p>Método de pagamento</p>
+
+            <div class="metodos">
+                <i class="fa-solid fa-credit-card"></i>
+                <label>Cartão de Crédito</label>
+                <input type="radio" name="metodo" id="credito-input">
+            </div>
+            <div class="metodos">
+                <i class="fa-brands fa-pix"></i>
+                <label>Pix</label>
+                <input type="radio" name="metodo" id="pix-input">
+            </div>
+         </form>
+
+    <!-- PAGAMENTO -->
+         <form> 
+            <p class="p-pag">Pagamento</p>
+            <div id="credito-opc" class="conteudo">
+                <div class="credito-div"> <!-- CRÉDITO -->
+                    <img src="/img/bandeiras.png" alt="">
+                    <label>Nome no cartão</label>
+                    <input placeholder="Cristiano Ronaldo">
+
+                    <label>Número do cartão</label>
+                    <input placeholder="1234 0000 2323 1234" minlength="16" maxlength="16">
+
+                    <label>Validade</label>
+                    <input placeholder="03/2030">
+
+                    <label>CVC</label>
+                    <input placeholder="000" minlength="3" maxlength="3">
+                </div>
+                
+            </div>
+            <div id="pix-opc" class="conteudo"> <!-- PIX -->
+                <p>Seu código <b>QR Code</b> para pagamento</p>
+                <img src="/img/qrcode.png">
+                <p>Ou se preferir, copie o <b>código</b></p>
+                <p>0000001002030030030exemplo3222030303</p>
+            </div>
+            
+         </form>
+         
+    </div>
+
+    <footer>
+        <div class="barrarodapé">
+            <div class="rodapé">@Petinhos 2023</div>
+        </div>
+    </footer>
+    <script src="main.js"></script> <!-- JS -->
+    <script src="https://kit.fontawesome.com/9a6725e795.js" crossorigin="anonymous"></script> <!-- SCRIPT DE ICONES -->
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> 
+            <img src="/img/logo.PNG" alt="" style="width: 100px;">        
+        </a>
+        <ul>
+            <li><input type="text" placeholder="O que você procura?"></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Caes.html">Cães</a></li>
+            <li><a href="Gatos.html">Gatos</a></li>
+            <li><a href="Peixes.html">Peixes</a></li>
+            <li><a href="Outros.html">Outros Pets</a></li>
+            <li><a href="Higiene.html">Higiene</a></li>
+            <li><a href="Jardim.html">Jardim</a></li>
+            <li><a href="Lista.html">Catálogo</a></li>
+        </ul>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cart = []; // Vetor para armazenar os itens do carrinho
+
+            // Função para adicionar itens ao carrinho
+            window.addToCart = function (id, name, price) {
+                const item = { id, name, price };
+                cart.push(item);
+                updateCart();
+            };
+
+            // Função para atualizar a exibição do carrinho
+            function updateCart() {
+                const cartItemsList = document.querySelector('.cart-items');
+                const cartTotal = document.getElementById('cart-total');
+
+                cartItemsList.innerHTML = '';
+                let total = 0;
+
+                cart.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.classList.add('cart-item');
+                    listItem.innerHTML = `
+                        <span>${item.name}</span>
+                        <span>R$ ${item.price.toFixed(2)}</span>
+                    `;
+                    cartItemsList.appendChild(listItem);
+
+                    total += item.price;
+                });
+
+                cartTotal.textContent = total.toFixed(2);
+            }
+        });
+    </script>
+</body>
+<footer>
+    <div class="barrarodapé">
+        <div class="rodapé">@Petinhos 2023</div>
+    </div>
+</footer>
+
+</html>
